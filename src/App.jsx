@@ -3,13 +3,13 @@ import './assets/css/master.css'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Brands from './components/Brands'
-import Features from './components/Features'
+import AppFeature from './components/AppFeature'
 import Work from './components/Work'
-import Transfer from './components/Transfer'
-import Comment from './components/Comment'
+import AppTransfer from './components/Transfer'
+import Testimonial from './components/Testimonial'
 import Faq from './components/Faq'
-import Email from './components/Email'
-import End from './components/End'
+import Subscribe from './components/Subscribe'
+import Footer from './components/Footer'
 
 function App() {
   
@@ -23,13 +23,13 @@ function App() {
         <Brands />
       </main>
       </div>
-      <Features />
+      <AppFeature />
       <Work />
-      <Transfer />
-      <Comment />
+      < AppTransfer />
+      <Testimonial />
       <Faq />
-      <Email />
-      <End />
+      <Subscribe />
+      <Footer />
     
     </>
   )

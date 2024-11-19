@@ -1,12 +1,12 @@
 import React from 'react'
-import IphoneCard from '../assets/images/logo/iphone -card.svg'
-import Card from '../assets/images/logo/card.svg'
-import Icon1 from '../assets/images/logo/icon-1.svg'
-import Icon4 from '../assets/images/logo/icon-4.svg'
-import Icon2 from '../assets/images/logo/icon-2.svg'
-import Icon5 from '../assets/images/logo/icon-5.svg'
-import Icon3 from '../assets/images/logo/icon-3.svg'
-import Icon6 from '../assets/images/logo/icon-6.svg'
+import IphoneCard from '../assets/images/iphone -card.svg'
+import Card from '../assets/images/card.svg'
+import IconOne from '../assets/images/icon-1.svg'
+import IconFour from '../assets/images/icon-4.svg'
+import IconTwo from '../assets/images/icon-2.svg'
+import IconFive from '../assets/images/icon-5.svg'
+import IconThree from '../assets/images/icon-3.svg'
+import IconSix from '../assets/images/icon-6.svg'
 
 const Features = () => {
   return (
@@ -22,40 +22,47 @@ const Features = () => {
                 luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
         </div>
               <div className="one">
-                <div id="pay" class="icon-box">
-                    <img src={Icon1}/><h3>Easy Payments</h3>
+                <div id="pay" className="icon-box">
+                    <img src={IconOne}/>
+                    <h3>Easy Payments</h3>
                   <p>Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
                     </div>
                     <div id="data" className="icon-box">
-                     <img src={Icon4}/><h3>Data Security</h3>
+                     <img src={IconFour}/>
+                     <h3>Data Security</h3>
                      <p>Augue pulvinar justo, fermentum fames aliquam accumsan vestibulum non. </p>
                     </div>
               </div>
                 <div className="two">
                     <div id="cost" className="icon-box">
-                        <img src={Icon2}/><h3>Cost Statistics</h3>
-                            <p>Mattis urna ultricies non amet, purus in auctor non. Odio vulputate ac nibh.</p>
+                        <img src={IconTwo}/>
+                        <h3>Cost Statistics</h3>
+                        <p>Mattis urna ultricies non amet, purus in auctor non. Odio vulputate ac nibh.</p>
                         </div>
             
                 <div id="support" className="icon-box">
-                        <img src={Icon5}/><h3>Support 24/7</h3>
-                            <p>A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris.</p>
+                        <img src={IconFive}/>
+                        <h3>Support 24/7</h3>
+                        <p>A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris.</p>
                 </div>
                 </div>
                 <div className="third">
                     <div id="regular" className="icon-box">
-                        <img src={Icon3}/><h3>Regular Cashback</h3>
-                            <p>Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet eleifend.
+                        <img src={IconThree}/>
+                        <h3>Regular Cashback</h3>
+                        <p>Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet eleifend.
                             </p>  
                 </div>
                 <div id="standard" className="icon-box">
-                        <img src={Icon6}/><h3>Top Standards</h3>
+                        <img src={IconSix}/>
+                        <h3>Top Standards</h3>
                             <p>Faucibus cursus maecenas lorem cursus nibh. Sociis sit risus id. Sit facilisis
                                 dolor arcu.</p> 
                 </div>
                 </div>
             
         </div>
+   
 </section>
   )
 }

@@ -26,12 +26,12 @@ const Work = () => {
             </figure>
         </div>
     </div>
-    <div className="foot">
+    <div className="end">
         <h3>Latest transaction history</h3>
         <p>Enim, et amet praesent pharetra. Mi non ante hendrerit amet sed. Arcu sociis tristique quisque hac in
             consectetur condimentum. </p>
     </div>
-   
+    <br /><br /><br />
 
 </section>
   )
