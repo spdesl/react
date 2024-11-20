@@ -11,9 +11,7 @@ const ClientTestimonial = () => {
       setTestimonials(data)
 
     }
-    useEffect(() => {
-
-    const [testimonials, setTestimonials] = useState ([])
+    useEffect(() => { 
     getTestimonials()
     }, [ ])
 
@@ -28,8 +26,8 @@ const ClientTestimonial = () => {
 
 
             {
-                testimonial.map((testimonil) => (
-                <Testimonial key={testimonil.id} item={testimonil} />))
+                testimonials.map((testimonial) => (
+                <Testimonial key={testimonial.id} item={testimonial} />))
             }
             
     </div>
