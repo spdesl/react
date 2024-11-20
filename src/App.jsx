@@ -6,7 +6,7 @@ import Brands from './components/Brands'
 import AppFeature from './components/AppFeature'
 import Work from './components/Work'
 import AppTransfer from './components/AppTransfer'
-import Testimonial from './components/Testimonial'
+import ClientTestimonial from './components/ClientTestimonial'
 import Faq from './components/Faq'
 import Subscribe from './components/Subscribe'
 import Footer from './components/Footer'
@@ -26,7 +26,7 @@ function App() {
       <AppFeature />
       <Work />
       < AppTransfer />
-      <Testimonial />
+      <ClientTestimonial />
       <Faq />
       <Subscribe />
       <Footer />

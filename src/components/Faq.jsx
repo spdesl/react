@@ -1,15 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import IconPhone from '../assets/images/icon-phone.svg'
 import WhatssApp from '../assets/images/icon-whatssap.svg'
+import AccordionItem from './AccordionItem'
 
 
 
 const Faq = () => {
+
+const [accordions, setAccordions] = useState([])
+const fetchFaq = async () => {
+    const res = await fetch('https://win24-assignment.azurewebsites.net/api/faq') 
+    const data = await res.json()
+    setAccordions(data)
+}
+
+useEffect(() => {
+fetchFaq()
+}, [])
+
+
+
   return (
     <section id="contact-options">
     <div className="contact">
         <div className="contactP">
-            <h3>Any questions? <br>Check out the FAQs</br></h3>
+            <h3>Any questions? Check out the FAQs </h3>
             <p>Still have unanswered questions and need to get in touch?</p>
         </div>
         <div className="contact-option">
@@ -29,83 +44,21 @@ const Faq = () => {
     </div>
     <div className="second-column">
         <div className="accordion">
-        <div id="n1" className="accordion-item">
-            <div className="item-titlebar">
-            <h4>Is any of my personal information stored in the App?</h4>
-            <div className= "btn-accordion">
-                <i  className="fa-solid fa-chevron-down"></i>
-            </div>
-        </div>
-        <p className="item-content">
-            Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et,
-                cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra
-                fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi,
-                enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique
-                tincidunt suspendisse ut consequat.</p>
-                </div>
 
-        <div id="n2" className="accordion-item">
-            <div className="item-titlebar">
-            <h4>What formats can I download my transaction history in?</h4>
-            <div className=" btn-accordion">
-                <i className=" fa-solid fa-chevron-down"></i>
-            </div>
-            </div>  
-            <p className="item-content">
-                Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et,
-                cursus. </p>
-        </div>
-            <div id="n3" className="accordion-item">
-            <div className="item-titlebar">
-                <h4>Can I schedule future transfers?</h4>
-                <div className="btn-accordion">
-                <i className="fa-solid fa-chevron-down"></i>
-            </div>
-            </div>
-            <p className="item-content">
-                Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et,
-                cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra
-                fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi,
-                enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique
-                tincidunt suspendisse ut consequat.</p>
-        </div>
-        <div id="n4" className="accordion-item">
-        <div className="item-titlebar">
-            <h4>When can I use Banking App services?</h4> 
-            <div className=" btn-accordion">
-                <i className=" fa-solid fa-chevron-down"></i>
-            </div> 
-        </div>
-        <p className="item-content">
-        Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper.</p>
+            {
+                accordions.map(item => (
+                <AccordionItem  key={item.id} item={item}/>
+                ))
+            }
 
-        </div>
-        <div id="n5" className="accordion-item">
-        <div className="item-titlebar">
-            <h4>Can I create my own password that is easy for me to remember?</h4>  
-            <div className=" btn-accordion">
-                <i className=" fa-solid fa-chevron-down"></i>
-            </div>  
-        </div>
-        <p className="item-content">
-        Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et,
-        cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit.  
-        </p>
-        </div>
-        <div id="n6" className="accordion-item">
-        <div className="item-titlebar">
-            <h4>What happens if I forget or lose my password?</h4>
-            <div className=" btn-accordion">
-                <i className=" fa-solid fa-chevron-down"></i>
-            </div>   
-        </div>
-        <p className="item-content">
-        Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et,
-                cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra
-                fermentum duis accumsan lectus non.</p>  
+        
+
+        
+        
+        
     </div>
     </div>
-    </div>
+    
     
 </section>
 )

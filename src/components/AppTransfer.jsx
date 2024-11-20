@@ -17,7 +17,7 @@ const AppTransfer = () => {
             <li className="checklist-item"><i className="fa-regular fa-circle-check"></i>Manage payments and transactions online</li>
         </ul>
         <div className="btn-2">
-            <a id="learn-up" href="">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+            <a id="learn-up" href="">Learn more <i className="fa-solid fa-arrow-right"></i></a>
         </div>
             
     </div> 
@@ -32,12 +32,12 @@ const AppTransfer = () => {
            <img className={ImageDown}/>
            <img className={InnerCard}/>
         </div>
-        <div class="second">
-        <div class="h">
+        <div className="second">
+        <div className="h">
             <h2>Receive payment from international bank details</h2>
         </div>
-        <div class="txt">
-        <div class="txt-left">
+        <div className="txt">
+        <div className="txt-left">
             <img src={InnerCard}/>
             <p>Manage your payments online. Mollis congue egestas egestas fermentum fames.</p>
         </div>
