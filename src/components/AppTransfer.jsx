@@ -3,6 +3,7 @@ import ImageUp from '../assets/images/inner.svg'
 import InnerOne from '../assets/images/inner-1.svg'
 import ImageDown from '../assets/images/inner-2.svg'
 import InnerCard from '../assets/images/inner-card.svg'
+import IconPayment from '../assets/images/icon-payment.svg'
 import IconSeven from '../assets/images/icon-7.svg'
 
 const AppTransfer = () => {
@@ -22,15 +23,15 @@ const AppTransfer = () => {
             
     </div> 
     <div className="card-container">
-        <img className={ImageUp}/>
-        <img className={InnerOne}/>
+        <img className="image-up" src={ImageUp}/>
+        <img className="image-2" src={InnerOne}/>
     </div>
 
 </div>
     <section id="transfer-down">
         <div className="payment">
-           <img className={ImageDown}/>
-           <img className={InnerCard}/>
+           <img className="image-down" src={ImageDown}/>
+           <img className="image-4" src={InnerCard}/>
         </div>
         <div className="second">
         <div className="h">
@@ -38,7 +39,7 @@ const AppTransfer = () => {
         </div>
         <div className="txt">
         <div className="txt-left">
-            <img src={InnerCard}/>
+            <img src={IconPayment}/>
             <p>Manage your payments online. Mollis congue egestas egestas fermentum fames.</p>
         </div>
         <div className="txt-right">
