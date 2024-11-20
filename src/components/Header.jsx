@@ -34,7 +34,8 @@ const handleThemeToggle = () => {
     <div className="container">
                 <a id="logo" href="index.html"><img src={LogoType}/></a>
                 <nav id="main-menu" className="navbar">
-                <a className="nav-link" href="#">Features</a>
+                <a className="nav-link-active" href="#">Features</a>
+                <a className="nav-link" href="#">contact</a>
                 
             </nav>
             <div id="darkmode-toggle-switch" className="btn-toggle-switch">

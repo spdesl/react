@@ -37,6 +37,9 @@ body{
     padding-right: var(--container-padding);
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    
 }
 a {
     color: var(--color-primary);
@@ -157,11 +160,20 @@ a:hover {
     color: var(--color-dark);
     font-weight: 600;
     text-decoration: none;
+    display: flex;
+    
     
 }
+.nav-linl-active{
+       color:var(--color-dark);
+        font-weight: 600;
+        font-size: 18px;
+        text-decoration: none;
+        display: flex;
+}
 .nav-link:hover{
-    color: var(--color-primary);
-    text-decoration: underline;
+    color: var(--color-dark);
+    text-decoration: none;
 }
 .active{
     color: var(--color-primary);
@@ -374,6 +386,7 @@ header .container{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    
 }
 .pictures{
     position: relative;
@@ -384,7 +397,7 @@ header .container{
 
     .back-pic{
         position: absolute;
-        top: 10%;
+        top: 60px;
         left: 7%;
         width: 35%;
       
@@ -392,7 +405,7 @@ header .container{
     }
     .front-pic{
        position: absolute;
-       top: 50px;
+       top: 80px;
        left: 50px;
        width: 40%;
     }
@@ -405,7 +418,8 @@ header .container{
     justify-content:space-between;
     align-items: flex-end;
     padding: 50px;
-    margin-left: 500px;
+    margin-left: 600px;
+    
     
 
 .container{
@@ -414,6 +428,7 @@ margin: 0 auto;
 padding: 30px;
 text-align: left;
 justify-content: center;
+display: grid;
 
 h2{
     font-size: 40px;

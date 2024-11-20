@@ -20,11 +20,7 @@ const StarRating = ({starRating}) => {
             <i className="fa-sharp fa-regular fa-star"></i>   
         ))
     }
-    <i className="fa-sharp fa-solid fa-star"></i>
-    <i className="fa-sharp fa-solid fa-star"></i>
-    <i className="fa-sharp fa-solid fa-star"></i>
-    <i className="fa-sharp fa-solid fa-star"></i>
-    <i className="fa-sharp fa-regular fa-star"></i>
+   
 </div>
   )
 }
