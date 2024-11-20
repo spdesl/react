@@ -25,8 +25,8 @@ const Hero = () => {
     </a>
 </div>
         <div className="images">
-<img className={MyBudget}/>
-<img className={YourCard}/>
+<img className="img-back" src={MyBudget} />
+<img className="img-front" src={YourCard}/>
 </div>
 
     </div>  

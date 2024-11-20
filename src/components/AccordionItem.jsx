@@ -13,7 +13,7 @@ const toggleAccordion = () => {
             <div className={`item-tetlebar $(isOpen ? 'active': '')`} onClick={toggleAccordion}>
             <h4>{item.title}</h4>
             <div className= "btn-accordion">
-                <i  className={`item-icon fa-solid $(isOpen ? 'fa-chevron-up': 'fa-chevron-down')`} ></i>
+                <i  className={`fa-solid $(isOpen ? 'fa-chevron-up': 'fa-chevron-down')`} ></i>
                 
             </div>
         </div>
