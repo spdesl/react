@@ -8,7 +8,7 @@ import IconFive from '../assets/images/icon-5.svg'
 import IconThree from '../assets/images/icon-3.svg'
 import IconSix from '../assets/images/icon-6.svg'
 
-const Features = () => {
+const AppFeatures = () => {
   return (
     <section id="app-feaures">
     <div className="pictures">
@@ -67,4 +67,4 @@ const Features = () => {
   )
 }
 
-export default Features
+export default AppFeatures

@@ -1,10 +1,10 @@
 import React from 'react'
-import Logo1 from '../assets/images/logo/logo-1.svg'
-import Logo2 from '../assets/images/logo/logo-2.svg'
-import Logo3 from '../assets/images/logo/logo-3.svg'
-import Logo4 from '../assets/images/logo/logo-4.svg'
-import Logo5 from '../assets/images/logo/logo-5.svg'
-import Logo6 from '../assets/images/logo/logo-6.svg'
+import Logo1 from '../assets/images/logo-1.svg'
+import Logo2 from '../assets/images/logo-2.svg'
+import Logo3 from '../assets/images/logo-3.svg'
+import Logo4 from '../assets/images/logo-4.svg'
+import Logo5 from '../assets/images/logo-5.svg'
+import Logo6 from '../assets/images/logo-6.svg'
 
 const Brands = () => {
   return (

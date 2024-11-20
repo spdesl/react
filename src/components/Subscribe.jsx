@@ -1,7 +1,7 @@
 import React from 'react'
 import Notification from '../assets/images/notification.svg'
 
-const Email = () => {
+const Subscribe = () => {
   return (
     <section id="subscribe" className="subscribe">
     <div className="notif">
@@ -18,4 +18,4 @@ const Email = () => {
   )
 }
 
-export default Email
+export default Subscribe

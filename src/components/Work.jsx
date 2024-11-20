@@ -1,7 +1,7 @@
 import React from 'react'
-import IphoneBudget from '../assets/images/logo/iPhone -mybudget.svg'
-import YourCard from '../assets/images/logo/iphone -yourcard.svg'
-import Transfer from '../assets/images/logo/iphone-transfer.svg'
+import IphoneBudget from '../assets/images/iPhone -mybudget.svg'
+import YourCard from '../assets/images/iphone -yourcard.svg'
+import Transfer from '../assets/images/iphone-transfer.svg'
 
 const Work = () => {
   return (

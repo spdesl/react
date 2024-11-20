@@ -1,6 +1,6 @@
 import React from 'react'
 import IconPhone from '../assets/images/icon-phone.svg'
-import WhatssApp from '../assets/images/icon-whatssapp.svg'
+import WhatssApp from '../assets/images/icon-whatssap.svg'
 
 
 
